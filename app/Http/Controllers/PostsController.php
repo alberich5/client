@@ -19,7 +19,7 @@ class PostsController extends Controller
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('quejas',compact("posts"));
     }
-
+/*funcion para guardar las quejas al base*/
     public function store(Request $request)
     {
         $this->validate($request,[
@@ -52,7 +52,7 @@ class PostsController extends Controller
 
         return view('posts/editposts',compact('post'));
     }
-
+    /*funcion para actualizar los cambios de las quejas*/
     public function update($id, Request $request)
     {
         $this->validate($request,[

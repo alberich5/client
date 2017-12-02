@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.6/sweetalert2.css">
+    <link rel="stylesheet" href="css/sweetalert2.css">
     <link href="css/codigo.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/poli.ico">
 

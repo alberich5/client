@@ -7,6 +7,7 @@ use App\User;
 
 class UsersController extends Controller
 {
+  /*funcion para mostrar los usarios que satan disponibles*/
     public function index()
     {
         $users = User::orderBy('created_at', 'desc')->paginate(10);
@@ -26,7 +27,7 @@ class UsersController extends Controller
 
         return view('users/editprofile',compact('user'));
     }
-
+    /*funcion para actualizar los usuarios*/
     public function update($id, Request $request)
     {
         $this->validate($request,[

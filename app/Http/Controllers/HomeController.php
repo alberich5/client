@@ -23,6 +23,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     /*mostrar las quejas solicitadas*/
     public function index(Request $request)
     {
         $posts=Post::where('id_usuario','=',$request->user()->id)->orderBy('created_at', 'desc')->paginate(10);
