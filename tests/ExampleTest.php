@@ -12,7 +12,7 @@ class ExampleTest extends TestCase
      * @return void
      */
     public function testBasicExample()
-    {
+    {   /*componente para que haga la prueba de integridad y funcionamiento de app*/
         $this->visit('/')
              ->see('ATENCION');
     }

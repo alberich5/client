@@ -1,5 +1,13 @@
+/*Estilos de la barra de Navegacion*/
 #navegacion{
-
   color: white !important;
   font-weight: bold;
+}
+/*aqui va los estilos del fondo welcome*/
+#fondoWelcome{
+
+}
+/*aqui las configuraciones del fondo de APP*/
+#fondoApp{
+
 }

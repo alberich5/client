@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        Holi
+        Como Usar !!
     </div>
 @endsection
