@@ -101,7 +101,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Sendmail System Path
+    | este apartado se basa en los componentes
     |--------------------------------------------------------------------------
     |
     | When using the "sendmail" driver to send e-mails, we will need to know
