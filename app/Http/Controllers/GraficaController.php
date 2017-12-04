@@ -17,4 +17,8 @@ class GraficaController extends Controller
   {
     return view('grafica/grafica');
   }
+  public function mensual()
+  {
+    
+  }
 }
