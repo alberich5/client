@@ -22,7 +22,8 @@
                             <input type="hidden" class="form-control" name="id_usuario" readonly="readonly" value="{{ $post->id_usuario }}">
                             <input type="text" class="form-control" name="nombre_usuario" readonly="readonly" value="{{ Auth::user()->name }}">
                             <label>Descripcion de la queja:</label>
-                            <input type="text" class="form-control" name="contenido" value="{{$post->contenido}}">
+
+                             <textarea class="form-control" rows="3" name="contenido">{{$post->contenido}}</textarea>
                             <label for="status">Status:</label>
                             <select name="status" class="form-control">
                                 <option value="atendida">Atendida</option>

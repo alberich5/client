@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+    /*Constructor para checar si esta logeado*/
+    public function __construct()
+    {
+      $this->middleware('auth');
+    }
 
     public function index()
     {

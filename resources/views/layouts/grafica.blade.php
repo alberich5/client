@@ -11,9 +11,9 @@
     <title>{{ config('Comercializacion', 'Comercializacion') }}</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/sweetalert2.css') }}">
-    <link href="{{ asset('css/codigo.css') }}" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.css">
+    <link href="css/codigo.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/poli.ico">
 
     <!-- Scripts -->
@@ -90,7 +90,7 @@
             </div>
         </nav>
 
-        @yield('content')
+        @yield('grafica')
     </div>
 
     <!-- Scripts -->
@@ -100,39 +100,5 @@
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.6/sweetalert2.js"></script>
 
-    <script type="text/javascript">
-    var vm = new Vue({
-            //id asignado al div en el que funcionara vue
-            el: '#app',
-            //funcion al crear el objet
-            data:{
-                errors:[],
-                fecha:"",
-                tipo:'',
-                entrada:'',
-                mes:'',
-                empresa:'',
-                representante:'',
-                domicilio:'',
-                ambito:'',
-                delegacion:'',
-                codigo:'',
-                codigo_queja:'',
-                status:'',
-                contenido:''
-            },
-            methods:{
-                mostrarAlert:function(){
-                  swal(
-                'Listo',
-                'Se a guardado la queja',
-                'success'
-              );
-                },
-                mostrarCancelar:function(){
-                    toastr.success('Eliminado');
-                },
-        }});
-    </script>
 </body>
 </html>

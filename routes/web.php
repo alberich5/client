@@ -23,6 +23,8 @@ Route::get('posts', 'PostsController@index');
 
 Route::get('quejas', 'PostsController@queja');
 
+Route::get('grafica', 'GraficaController@grafica');
+
 Route::get('howto', function (){
 
     return view('howto');
