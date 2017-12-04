@@ -25,14 +25,14 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="fecha">Fecha que recibio la queja:</label>
-                        <input type="date" class="form-control" name="fecha" >
+                        <input type="date" class="form-control" name="fecha"  value="{{old('fecha')}}">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="tipo">Tipo de queja:</label>
-                      <select name="tipo" class="form-control">
+                      <select name="tipo" class="form-control" value="{{old('tipo')}}" >
                           <option value="Queja">Queja</option>
         	            		<option value="Sugerencia">Sugerencia</option>
                     	</select>
@@ -42,7 +42,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="entrada">Entrada:</label>
-                      <select name="entrada" class="form-control">
+                      <select name="entrada" class="form-control" value="{{old('entrada')}}" >
                           <option value="Llamada">Llamada Telefónica</option>
                           <option value="Correo">Correo Electrónico</option>
                           <option value="Escrito">Escrito</option>
@@ -53,7 +53,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="mes">Mes:</label>
-                      <select name="mes" class="form-control">
+                      <select name="mes" class="form-control" value="{{old('tipo')}}" >
                           <option value="enero">Enero</option>
                           <option value="febrero">Febrero</option>
                           <option value="marzo">Marzo</option>
@@ -94,7 +94,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="ambito">Ambito:</label>
-                      <select name="ambito" class="form-control">
+                      <select name="ambito" class="form-control" value="{{old('ambito')}}">
                           <option value="privada">Privada</option>
                           <option value="federal">Federal</option>
                           <option value="estatal">Estatal</option>
@@ -105,7 +105,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="delegacion">Delegacion o Sub Delegacion:</label>
-                      <select name="delegacion" class="form-control">
+                      <select name="delegacion" class="form-control" value="{{old('delegacion')}}">
                           <option value="valles">Valles Centrales</option>
                           <option value="huajuapam">Huajuapam de leon</option>
                           <option value="matias">Matias Romero</option>
@@ -118,9 +118,8 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="codigo">Codigo:</label>
-                      <select name="codigo" class="form-control">
+                      <select name="codigo" class="form-control" value="{{old('codigo')}}">
                           <option value="problemas_operatividad">PROBLEMAS DE OPERATIVIDAD</option>
-
                       </select>
                     </div>
                 </div>
@@ -128,7 +127,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="codigo_queja">Codigo de Queja:</label>
-                      <select name="codigo_queja" class="form-control">
+                      <select name="codigo_queja" class="form-control" value="{{old('codigo_queja')}}">
                           <option value="mala_atencion">MALA ATENCION DE LA DELEGACIÓN</option>
                       </select>
                     </div>
@@ -137,7 +136,7 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                       <label for="status">Status:</label>
-                      <select name="status" class="form-control">
+                      <select name="status" class="form-control" value="{{old('status')}}">
                         <option value="pendiente">Pendiente</option>
                           <option value="atendida">Atendida</option>
                       </select>
