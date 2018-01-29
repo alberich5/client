@@ -27,7 +27,7 @@ Route::get('grafica', 'GraficaController@grafica');
 
 Route::get('howto', function (){
 
-    return view('howto');
+    return view('usar');
 
 });
 

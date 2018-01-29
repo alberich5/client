@@ -11,7 +11,7 @@
                         <br>
                         <span class="label label-info">Name: {{Auth::user()->name}}</span><br>
                         <span class="label label-info">Email: {{Auth::user()->email}}</span><br>
-                        <a href="/users/editprofile/{{Auth::user()->id}}"><button class="btn btn-primary">Editar</button></a>
+                        <!--<a href="/users/editprofile/{{Auth::user()->id}}"><button class="btn btn-primary">Editar</button></a>-->
                     </div>
                 </div>
             </div>
